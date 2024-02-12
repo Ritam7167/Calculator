@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- <input id="calculator">
+    <br>
+    <button id="b9" onClick="fun(9)">9</button>
+    <button id="b8" onClick="fun(8)">8</button>
+    <button id="b7" onClick="fun(7)">7</button>
+    <button id="b8" onClick="fun('+')">+</button>
+    <button id="b7" onClick="fun('-')">-</button>
+    <button id="b7" onClick="fun('.')">.</button>
+    <button id="b7" onClick='fun("(")'>(</button>
+    <button id="b7" onClick='fun(")")'>)</button>
+
+    <button id="b7" onClick='del()'>Backspace</button>
+
+
+    <button id="equal" onClick="calculate()">=</button> -->
+
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox" readonly>
+        <div>
+            <button class="operator ac" onClick="inputBox.value = '' ">AC</button>
+            <button class="operator del" onClick='del()'>DEL</button>
+            <button class="braces" onClick="fun('(')">(</button>
+            <button class="braces" onClick="fun(')')">)</button>
+        </div>
+        <div>
+            <button class="braces" onClick="fun('[')">[</button>
+            <button class="braces" onClick="fun(']')">]</button>
+            <button class="operator" onClick="fun('%')">%</button>
+            <button class="operator" onClick="fun('/')">/</button>
+        </div>
+        <div>
+            <button onClick="fun(7)">7</button>
+            <button onClick="fun(8)">8</button>
+            <button onClick="fun(9)">9</button>
+            <button class="operator" onClick="fun('*')">*</button>
+        </div>
+        <div>
+            <button onClick="fun(4)">4</button>
+            <button onClick="fun(5)">5</button>
+            <button onClick="fun(6)">6</button>
+            <button class="operator" onClick="fun('-')">-</button>
+        </div>
+        <div>
+            <button onClick="fun(1)">1</button>
+            <button onClick="fun(2)">2</button>
+            <button onClick="fun(3)">3</button>
+            <button class="operator" onClick="fun('+')">+</button>
+        </div>
+        <div>
+            <button onClick="inputBox.value += '00' ">00</button>
+            <button onClick="fun(0)">0</button>
+            <button onClick="fun('.')">.</button>
+            <button class="equalBtn" onClick="calculate()">=</button>
+        </div>
+    </div> 
+    <!-- end calculator -->
+
+</body>
+</html>
